@@ -1,9 +1,10 @@
-package com.hs.WellnessBookingSystem.models;
+package com.hs.WellnessBookingSystem.model;
 
 import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Document(collection = "users")
@@ -24,7 +25,9 @@ public class User {
 
     private String companyName;   // For HR accounts
 
-    private String vendorName;    // For Vendor accounts
+    private String vendorName;   // For Vendor accounts
+
+    private LocalDateTime createdAt;
 
     private List<String> eventTags;   // Optional: vendor handles specific event types
 }
