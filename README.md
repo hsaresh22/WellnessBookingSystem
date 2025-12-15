@@ -44,7 +44,7 @@ The system is built using Java SpringBoot and MongoDB
 - `GET user/users` - View all registered users (HR role only)
 - ------
 ## Testing
-- Swagger UI is available at `http://localhost:8080/swagger-ui.html` for testing the API endpoints.
+- Swagger UI is available at `http://localhost:8080/swagger-ui.html` for viewing/testing the API endpoints.
 - Unit and Integration Tests:
   - Test classes are located in `src/test/java/com/example/wellnessbooking`
   - Execute tests using Maven:
@@ -58,7 +58,6 @@ An ER diagram representing the database schema can be found in the `docs` folder
 ![56f3da1b-1525-4541-b8d4-72e62f0557d6.png](/docs/56f3da1b-1525-4541-b8d4-72e62f0557d6.png)
 ## Future Improvements
 - The Authentication and Event has been made to an interface to allow for SOLID principles and future extensibility
-- Add role-based access control for more granular permissions.
 - Implement JWT for stateless authentication.
 - Implement email notifications for booking confirmations and reminders.
 - Add more detailed logging and monitoring.
