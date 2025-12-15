@@ -1,4 +1,4 @@
-package com.hs.WellnessBookingSystem.models;
+package com.hs.WellnessBookingSystem.model;
 
 public enum UserRole {
     HR,
